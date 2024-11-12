@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Island In Malaysia</title>
+    <style>
+        /* Background and Font Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('wallpaper3.jpeg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            color: white; /* Set default text color to white */
+            margin: 0;
+        }
+
+        h1 {
+            font-size: 7em;
+            color: #0000ff; /* Set title font color */
+            text-align: center;
+            animation: fadeInBlink 2s infinite;
+        }
+
+        @keyframes fadeInBlink {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Section Styling */
+        .place-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 80%;
+            margin: 30px 0;
+            animation: fadeInCome 1.5s ease;
+        }
+
+        .place-section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        @keyframes fadeInCome {
+            0% { transform: translateY(50px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        /* Image Styling */
+        .place-image {
+            flex: 1;
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease;
+        }
+        
+        .place-image:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Styling */
+        .place-text {
+            flex: 1;
+            font-size: 1.2em;
+            padding: 20px;
+            text-align: justify;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Activity List Styling */
+        .activities {
+            margin-top: 10px;
+        }
+
+        /* Email and Profile Picture Styling */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer img {
+            width: 50px; /* Adjust size as needed */
+            border-radius: 50%; /* Make it circular */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Title Section -->
+    <h1>Explore 5 Wonderful Islands In Malaysia</h1>
+
+    <!-- Content Container -->
+    <div class="container">
+        
+        <!-- Place 1: Langkawi -->
+        <div class="place-section">
+            <img src="datarangLang.jpg" alt="Langkawi" class="place-image">
+            <div class="place-text">
+                <h2>Langkawi</h2>
+                <p>Langkawi is an archipelago of **99 islands** located in the Andaman Sea, known for its stunning beaches, lush rainforests, and duty-free shopping. It is one of Malaysia's most popular tourist destinations, offering attractions like the **Langkawi Sky Bridge** and **Eagle Square**. The island is ideal for both relaxation and adventure.</p>
+                <p>Visitors can explore the rich biodiversity of the island by taking nature walks or visiting the Kilim Karst Geoforest Park. Langkawi is also famous for its **night markets**, where tourists can sample local delicacies.</p>
+                <div class="activities">
+                    <strong>Activities:</strong>
+                    <ul>
+                        <li>Island Hopping Tours</li>
+                        <li>Jet Ski Adventures</li>
+                        <li>Cable Car Ride to Gunung Mat Cincang</li>
+                    </ul>
+                </div>
+                <p><strong>Location:</strong> Latitude -6.3187, Longitude 99.8509</p>
+                <img src="Langkawicable.jpg" alt="Activities in Langkawi" class="place-image">
+            </div>
+        </div>
+
+        <!-- Place 2: Perhentian Islands -->
+        <div class="place-section">
+            <img src="perhentian.jpg" alt="Perhentian Islands" class="place-image">
+            <div class="place-text">
+                <h2>Perhentian Islands</h2>
+                <p>The Perhentian Islands are famous for their crystal-clear waters and vibrant marine life. These islands are a haven for snorkeling and diving enthusiasts.</p>
+                <p>The islands are home to various species of coral reefs and tropical fish, making them perfect for underwater exploration. The laid-back atmosphere is ideal for those looking to unwind on pristine beaches.</p>
+                <div class="activities">
+                    <strong>Activities:</strong>
+                    <ul>
+                        <li>Snorkeling with Turtles</li>
+                        <li>Jungle Trekking</li>
+                        <li>Kayaking around the islands</li>
+                    </ul>
+                </div>
+                <p><strong>Location:</strong> Latitude -5.9014, Longitude 102.7456</p>
+                <img src="kayakperhentian.jpeg" alt="Activities in Perhentian Islands" class="place-image">
+            </div>
+        </div>
+
+        <!-- Place 3: Sipadan Island -->
+        <div class="place-section">
+            <img src="sipadan.jpg" alt="Sipadan Island" class="place-image">
+            <div class="place-text">
+                <h2>Sipadan Island</h2>
+                <p>Sipadan Island is renowned as one of the best diving spots in the world, home to an abundance of marine life.</p>
+                <p>This island is famous for its steep wall dives and diverse underwater ecosystem that includes turtles, barracudas, and various species of sharks. It is a protected area that limits the number of divers each day to preserve its natural beauty.</p>
+                <div class="activities">
+                    <strong>Activities:</strong>
+                    <ul>
+                        <li>Diving with Sea Turtles</li>
+                        <li>Coral Reef Exploration</li>
+                        <li>Birdwatching on the island</li>
+                    </ul>
+                </div>
+                <p><strong>Location:</strong> Latitude 4.0704, Longitude 118.6004</p>
+                <img src="sipadanturtle.jpg" alt="Activities in Sipadan Island" class="place-image">
+            </div>
+        </div>
+
+        <!-- Place 4: Redang Island -->
+        <div class="place-section">
+            <img src="Redang.jpg" alt="Redang Island" class="place-image">
+            <div class="place-text">
+                <h2>Redang Island</h2>
+                <p>Redang Island is known for its pristine coral reefs and clear waters, making it a favorite destination for snorkeling and diving.</p>
+                <p>The island features several luxury resorts and offers a tranquil escape from city life. Visitors can enjoy beach activities or explore the surrounding marine park that is teeming with life.</p>
+                <div class="activities">
+                    <strong>Activities:</strong>
+                    <ul>
+                        <li>Diving in Marine Park</li>
+                        <li>Snorkeling Tours</li>
+                        <li>Beach Volleyball</li>
+                    </ul>
+                </div>
+                <p><strong>Location:</strong> Latitude 5.7439, Longitude 103.0058</p>
+                <img src="Redangscuba.jpg" alt="Activities in Redang Island" class="place-image">
+            </div>
+        </div>
+
+        <!-- Place 5: Rawa Island -->
+        <div class="place-section">
+            <img src="rawa.jpg" alt="Rawa Island" class="place-image">
+            <div class="place-text">
+                <h2>Rawa Island</h2>
+                <p>This small private island features white sandy beaches and crystal-clear waters perfect for swimming and snorkeling.</p>
+                <p>The island offers a serene environment ideal for relaxation and is less commercialized compared to other tourist spots in Malaysia. Visitors can enjoy water sports or simply lounge on the beach.</p>
+                <div class="activities">
+                    <strong>Activities:</strong>
+                    <ul>
+                        <li>Kayaking in Clear Waters</li>
+                        <li>Paddleboarding at Sunset</li>
+                        <li>Beach Bonfire Nights</li>
+                    </ul>
+                </div>
+                <p><strong>Location:</strong> Latitude 1.5427, Longitude 103.3209</p>
+                <img src="rawapaddle.jpg" alt="Activities in Rawa Island" class="place-image">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <!-- Email Address -->
+        <p style="font-size: small;">2023211876@student.uitm.edu.my</p>
+
+         <!-- Profile Picture -->
+         <!-- Replace 'profilepic.jpg' with your actual profile picture file name -->
+         <!-- Ensure the image file is accessible in your project directory -->
+         <img src='profile pic.png' alt='Profile Picture' />
+    </div>
+
+</body>
+</html>
